@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Logo Carousel</title>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+    }
+    .logo-scroller {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .logo-track {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-logos 30s linear infinite;
+    }
+    .logo-track img {
+      height: 50px;
+      margin: 0 15px;
+      vertical-align: middle;
+      object-fit: contain;
+      max-height: 12vw;
+    }
+    @media (max-width: 768px) {
+      .logo-track img {
+        height: 35px;
+        margin: 0 10px;
+      }
+    }
+    @media (max-width: 480px) {
+      .logo-track img {
+        height: 28px;
+        margin: 0 8px;
+      }
+    }
+    @keyframes scroll-logos {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-scroller">
+    <div class="logo-track">
+      <!-- Paste your logos twice for infinite loop -->
+      <img src="https://i.postimg.cc/yDspc1Lm/image.png" />
+      <img src="https://i.postimg.cc/9Db8B6kv/image.png" />
+      <img src="https://i.postimg.cc/zLfd2dZ3/image.png" />
+      <img src="https://i.postimg.cc/vgKf8zNq/image.png" />
+      <img src="https://i.postimg.cc/bDr1jM3S/image.png" />
+      <img src="https://i.postimg.cc/dLrrvGm6/image.png" />
+      <img src="https://i.postimg.cc/FYvcK1T4/image.png" />
+      <img src="https://i.postimg.cc/fS0XVd4w/image.png" />
+      <img src="https://i.postimg.cc/XXTdTsFX/image.png" />
+      <img src="https://i.postimg.cc/Rq3wskWj/image.png" />
+      <img src="https://i.postimg.cc/t1Cxhw0v/image.png" />
+      <img src="https://i.postimg.cc/zLtRp78z/image.png" />
+      <img src="https://i.postimg.cc/1nbV1z8b/image.png" />
+      <img src="https://i.postimg.cc/RWv6By0C/image.png" />
+      <img src="https://i.postimg.cc/14NNcDTS/image.png" />
+      <img src="https://i.postimg.cc/CnDBhVD5/image.png" />
+      <img src="https://i.postimg.cc/0bRKtbRw/image.png" />
+      <img src="https://i.postimg.cc/fJct1DDg/image.png" />
+      <img src="https://i.postimg.cc/4nzxxPqY/image.png" />
+      <img src="https://i.postimg.cc/hJ9MB7sm/image.png" />
+
+      <!-- Repeat same logos for infinite loop -->
+      <img src="https://i.postimg.cc/yDspc1Lm/image.png" />
+      <img src="https://i.postimg.cc/9Db8B6kv/image.png" />
+      <img src="https://i.postimg.cc/zLfd2dZ3/image.png" />
+      <img src="https://i.postimg.cc/vgKf8zNq/image.png" />
+      <img src="https://i.postimg.cc/bDr1jM3S/image.png" />
+      <img src="https://i.postimg.cc/dLrrvGm6/image.png" />
+      <img src="https://i.postimg.cc/FYvcK1T4/image.png" />
+      <img src="https://i.postimg.cc/fS0XVd4w/image.png" />
+      <img src="https://i.postimg.cc/XXTdTsFX/image.png" />
+      <img src="https://i.postimg.cc/Rq3wskWj/image.png" />
+    </div>
+  </div>
+</body>
+</html>
